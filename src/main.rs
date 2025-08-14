@@ -1,12 +1,13 @@
 
 
+#[allow(dead_code)]
 #[derive(Debug)]
 struct Person<'a> {
     name: &'a str,
     age: u8
 }
 
-
+mod variable;
 fn main() {
 
     // this is a number primitive. the insteger type is: i8, i16, i32, i64, i128
@@ -67,6 +68,8 @@ fn main() {
 
 
     println!("Hello, world!");
+
+    variable::variable_print();
 }
 
 /*
