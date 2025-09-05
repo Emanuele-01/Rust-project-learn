@@ -27,6 +27,11 @@ pub fn type_print() {
     // this is a tuple primitive. the tuple type is: (Type, T, T, T, T, T, T, T, T, T)
     let tuple: (i8, i8, i8, i8, i8, i8, i8, i8, i8, i8) = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
+    /*
+    Tuples are lists of immutable values, which means that once they are filled with values, those values can no longer be changed.
+    We can read the tuple with ‘.’ followed by the index of the value to be read.
+    */
+
     // this is a vector primitive. the vector type is: Vec<Type>
     let vector: Vec<i8> = vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -53,6 +58,9 @@ pub fn type_print() {
 
     // this is a print with format string
     println!("tuple: {tuple:?}");
+
+    // this is a print with format string
+    println!("single value tuple: {}", tuple.2);
 
     // this is a print with format string
     println!("vector: {vector:?}");
