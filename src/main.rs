@@ -1,6 +1,7 @@
 mod function;
 mod types;
 mod variable;
+mod input;
 
 fn main() {
     types::type_print();
@@ -8,7 +9,9 @@ fn main() {
     variable::variable_print();
 
     let res_sum = function::sum(10, 10);
-    println!("{res_sum:?}")
+    println!("{res_sum:?}");
+
+    input::new_input();
 }
 
 /*
