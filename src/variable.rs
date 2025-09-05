@@ -23,8 +23,29 @@ pub fn variable_print() {
     */
 
     let (a,b) = (1, 2);
-    println!("value a is {}, value b is {b:?}", a)
+    println!("value a is {}, value b is {b:?}", a);
     
+    /*
+    Even though let is an immutable variable, you can always redeclare the same variable and overwrite it. 
+    Here, the “CONST” constants come in handy, where the value cannot be changed and the variable cannot be overwritten.
+     */
+
+    // let is overwritten
+
+    let hello= "ciao";
+
+    println!("{}", hello);
+
+    let hello = "hello";
+
+    println!("{}", hello);
+
+    // const cannot be overwritten.
+
+    const G: f64 = 9.81;
+
+    println!("{}", G);
+
 
 
 }
