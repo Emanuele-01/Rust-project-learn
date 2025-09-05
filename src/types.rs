@@ -9,6 +9,9 @@ pub fn type_print() {
     // this is a number primitive. the insteger type is: i8, i16, i32, i64, i128
     let num: i8 = 10;
 
+    // this is a unsigned number primitive. the insteger type is: u8, u16, u32, u64, u128
+    let u_num: u8 = 10;
+
     // this is a float primitive. the float type is: f32, f64
     let float: f32 = 10.0;
 
@@ -32,6 +35,9 @@ pub fn type_print() {
 
     // this is a print with format string
     println!("num: {}", num);
+
+    // this is a print with format string
+    println!("unsigned number: {}", u_num);
 
     // this is a print with format string
     println!("float: {float:?}");
