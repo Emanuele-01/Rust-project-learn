@@ -2,7 +2,7 @@
 
 version="1.0.0"
 
-git tag $version -a
+git tag -a $version -m "create new version: $version"
 
 git push origin --tags
 
