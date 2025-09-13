@@ -6,6 +6,8 @@ version="$2"
 sed -i '' "s|$lastVersion|$version|g" ./Cargo.toml
 sed -i '' "s|v$lastVersion|v$version|g" ./VERSION
 
+cargo update
+
 # Stage and commit changes first
 git add .
 git commit -m "create new version: v$version"
