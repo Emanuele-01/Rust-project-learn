@@ -1,6 +1,10 @@
 #!/bin/bash
 
-version="1.0.1"
+lastVersion="$1"
+version="$2"
+
+sed -i "s/$lastVersion/$tag/g" ./cargo.toml
+sed -i "s/$lastVersion/$tag/g" ./VERSION
 
 # Stage and commit changes first
 git add .
