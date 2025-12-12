@@ -3,6 +3,7 @@ mod types;
 mod variable;
 mod input;
 mod conditions;
+mod loops;
 
 fn main() {
     types::type_print();
@@ -15,6 +16,8 @@ fn main() {
     input::new_input();
 
     conditions::condition();
+
+    loops::loops();
 }
 
 /*
