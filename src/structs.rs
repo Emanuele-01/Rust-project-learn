@@ -5,6 +5,11 @@ pub fn structs() {
         x: i32,
         y: i32,
     }
+    struct Point2 {
+        x: i32,
+        y: i32,
+        z: i32
+    }
 
     let origin = Point { x: 0, y: 0 }; // origin: Point
 
@@ -20,6 +25,7 @@ pub fn structs() {
 
     let point = point; // `point` is now immutable.
 
+    println!("point z: {}", point.x);
     // Your structure can still contain &mut references
     // The struct PointRef<'a> { x: &'a mut i32, y: &'a mut i32 } is a mutable reference-based Point struct in Rust with a lifetime annotation 'a, ensuring that the references x and y cannot outlive the data they point to, thereby enforcing memory safety and preventing dangling references.
     struct PointRef<'a> {
@@ -37,4 +43,9 @@ pub fn structs() {
 
     *r.x = 5;
     *r.y = 6;
+
+    let point3 = Point2{z: 1, x: 10, y: 30};
+    let point4 = Point2{z:5, .. point3};
+
+    println!("z di Point4: {}", point4.z);
 }

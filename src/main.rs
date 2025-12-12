@@ -6,6 +6,7 @@ mod conditions;
 mod loops;
 mod vectors;
 mod structs;
+mod enums;
 
 fn main() {
     types::type_print();
@@ -24,6 +25,8 @@ fn main() {
     vectors::vectors();
 
     structs::structs();
+    
+    let message = enums::Message::Write("hello world!!".to_string());
 }
 
 /*
