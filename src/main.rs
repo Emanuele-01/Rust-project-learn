@@ -2,6 +2,7 @@ mod function;
 mod types;
 mod variable;
 mod input;
+mod conditions;
 
 fn main() {
     types::type_print();
@@ -12,6 +13,8 @@ fn main() {
     println!("{res_sum:?}");
 
     input::new_input();
+
+    conditions::condition();
 }
 
 /*
