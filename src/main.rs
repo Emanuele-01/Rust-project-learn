@@ -5,6 +5,7 @@ mod input;
 mod conditions;
 mod loops;
 mod vectors;
+mod structs;
 
 fn main() {
     types::type_print();
@@ -21,6 +22,8 @@ fn main() {
     loops::loops();
 
     vectors::vectors();
+
+    structs::structs();
 }
 
 /*
