@@ -4,6 +4,7 @@ mod variable;
 mod input;
 mod conditions;
 mod loops;
+mod vectors;
 
 fn main() {
     types::type_print();
@@ -18,6 +19,8 @@ fn main() {
     conditions::condition();
 
     loops::loops();
+
+    vectors::vectors();
 }
 
 /*
